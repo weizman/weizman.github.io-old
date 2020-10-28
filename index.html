@@ -1,0 +1,62 @@
+<html>
+<head>
+  <script> document.domain !== 'weizman.github.io' && (location.href = 'https://weizman.github.io/website') </script>
+  <title>Weizman Gal</title>
+  <script src="./content/js/libs/showdown.js"></script>
+  <script src="./content/js/libs/highlight.js"></script>
+  <script src="./content/js/main.js"></script>
+  <link rel="stylesheet" href="./content/css/style.css">
+  <link rel="stylesheet" href="./content/css/highlight.css">
+</head>
+<body>
+
+  <div class="sidenav">
+    <div style="display: flex; padding: 15px 15px 15px 65px;">
+      <a target="_blank" href="https://github.com/weizman">
+        <img class="sidenavimg" style="width:50px;height:50px;" src="./content/img/github.png">
+      </a>
+      <a target="_blank" href="https://www.facebook.com/WeizmanGal">
+        <img class="sidenavimg" style="width:50px;height:50px;" src="./content/img/facebook.png">
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/weizmangal/">
+        <img class="sidenavimg" style="width:50px;height:50px;" src="./content/img/linkedin.jpg">
+      </a>
+      <a target="_blank" href="https://twitter.com/WeizmanGal">
+        <img class="sidenavimg" style="width:50px;height:50px;" src="./content/img/twitter.png">
+      </a>
+      <a target="_blank" href="https://medium.com/@weizmangal">
+        <img class="sidenavimg" style="width:50px;height:50px;" src="./content/img/medium.png">
+      </a>
+      <a target="_blank" href="mailto:weizmangal@gmail.com">
+        <img class="sidenavimg" style="width:50px;height:50px;" src="./content/img/gmail.png">
+      </a>
+    </div>
+    <img class="sidenavimg" style="width:170px;height:170px; padding: 15px 15px 15px 15px;"
+    onclick="present('about')" src="./content/img/pp.jpeg">
+
+    <a class="sidebar" onclick="location='/website/?about'">about</a>
+    <a class="sidebar" onclick="location='/website/?resume'">CV (Resume)</a>
+    <br>
+    <a class="sidebar dummy"><u>Articles</u></a>
+    <a class="sidebar" onclick="location='/website/?WhatsApp-Vulnerability-Disclosure-Read-Permissions-From-The-File-System-(CVE-2019-18426)'">"WhatsApp Vulnerability Disclosure" <br> "Read Permissions From The File System" <br> "(CVE-2019-18426)"</a>
+    <a class="sidebar" target="_blank" href="https://github.com/weizman/CVE-2019-18426">"CVE-2019-18426 Technical Project"</a>
+    <br>
+    <a class="sidebar" onclick="location='/website/?javascript-anti-debugging-some-next-level-shit-part-1'">"javascript anti debugging" <br> "some next level shit" <br> "(part 1)"</a>
+    <a class="sidebar" target="_blank" href="https://www.youtube.com/watch?v=KYhgCjfdr-M">"Live talk on in.dev confrence"</a>
+    <br>
+    <a class="sidebar" onclick="location='/website/?list-every-event-that-exists-in-the-browser'">"list every event that exists in the browser"</a>
+    <a class="sidebar" onclick="location='/website/?beforeunload-and-unload-events'">"beforeunload and unload events"</a>
+    <br>
+    <a class="sidebar dummy"><u>Music</u></a>
+    <a class="sidebar" target="_blank" href="https://www.youtube.com/watch?v=IXuqv6_3PUU">"13 Shekels - Despair"</a>
+  </div>
+
+  <div class="main">
+    <p>404 - no such page. you should be redirected to the main page in no time!</p>
+  </div>
+  <script>
+  setContainer(document.querySelector('.main'));
+  present(URL_PATH);
+  </script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 # Enjoying Javascript and Web Security :)
 
-Check out my [resume](https://weizman.github.io/website/?resume) and my different projects and articles, and feel free to hit me up at any time for any reason!
+Check out my [resume](https://weizman.github.io/?resume) and my different projects and articles, and feel free to hit me up at any time for any reason!
 
 # This is how I stay up to speed
 

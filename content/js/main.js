@@ -1,6 +1,6 @@
 var converter = new showdown.Converter();
 
-var URL_BASE = 'https://weizman.github.io/website/';
+var URL_BASE = 'https://weizman.github.io/';
 var URL_PATH = location.search.replace('?', '');
 
 if (location.origin === 'http://localhost') {

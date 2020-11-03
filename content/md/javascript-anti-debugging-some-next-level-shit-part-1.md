@@ -4,7 +4,7 @@ _Originally was posted on [Perimeterx](https://www.perimeterx.com/blog/javascrip
 
 _Later on was published on [Medium](https://medium.com/@weizmangal/javascript-anti-debugging-some-next-level-sh-t-part-1-abusing-sourcemappingurl-da91ff948e66)_
 
-> **tl;dr - Abusing [SourceMappingURL](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map) feature can allow attackers to create one of the strongest Cross Browsers Javascript Anti Debugging techniques that was ever seen ([fully detailed live demo](https://px-blog-source-map-anti-debug.appspot.com/public/smap/index.html))**
+> **tl;dr - Abusing [SourceMappingURL](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map) feature can allow attackers to create one of the strongest Cross Browsers Javascript Anti Debugging techniques that was ever seen ([fully detailed live demo](https://us-central1-smap-251411.cloudfunctions.net/index))**
 
 This article’s purpose is to introduce a new Javascript Anti Debugging technique in an advanced level and therefore assumes the reader already has an understanding of the different aspects of web security and what Javascript Anti Debugging really is.
 
@@ -28,7 +28,7 @@ I was curious about its implementation and was wondering regarding its potential
 
 It had immediately drawn my attention when I realized its first interesting property:
 
-### [The request to SourceMappingURL is completely silent and hidden](https://px-blog-source-map-anti-debug.appspot.com/public/smap/cases/sourcemap/sourcemap.html)
+### [The request to SourceMappingURL is completely silent and hidden](https://us-central1-smap-251411.cloudfunctions.net/caseSourceMap)
 
 If a script contains the `SourceMappingURL=` comment and is attached to the DOM, the browser will fire a request to the link specified after the `=` sign - but you won’t be able to tell that by looking at the devtools - you won’t see anything in the network panel nor the console panel - simply nowhere! The only way of telling that request had happened is by either using some sort of a network debugging proxy (such as [fiddler](https://www.telerik.com/fiddler) or [wireshark](https://www.wireshark.org/)) or looking for that request in `chrome://net-export` in Chrome browser for example. The response to this request however cannot be captured by client side Javascript since it is being handled by the browser itself (because the browser is the one to get the source map and use it to map the bundled resources to the original resources).
 
@@ -36,7 +36,7 @@ Now that caught my attention! Being able to fire a hidden request from the brows
 
 So firing a hidden request is awesome and everything, but it is just a static request. I mean, if I could dynamically construct the url to which the SourceMappingURL request should go, that would be even more powerful.
 
-### [The SourceMappingURL can be constructed dynamically (on-the-fly)](https://px-blog-source-map-anti-debug.appspot.com/public/smap/cases/dynamic/dynamic.html)
+### [The SourceMappingURL can be constructed dynamically (on-the-fly)](https://us-central1-smap-251411.cloudfunctions.net/dynamic)
 
 The following works:
 
@@ -55,7 +55,7 @@ And since this works, I can leak any type of dynamic information I want from the
 
 So far so good. But as I always do when I learn of a new trick to send requests from the browser - I tried to see if I can use this one to bypass [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) rules.
 
-### [The request made by SourceMappingURL bypasses CSP completely](https://px-blog-source-map-anti-debug.appspot.com/csp)
+### [The request made by SourceMappingURL bypasses CSP completely](https://us-central1-smap-251411.cloudfunctions.net/csp)
 
 Wow! That one was a cool discovery in my research! So if I go on https://example.com for example and it responds with Content-Security-Policy: default-src https://example.com as one of its headers (which means requests under https://example.com are only allowed to be made to https://example.com), I would be able to bypass that rule completely by using the SourceMappingURL feature by doing:
 
@@ -66,7 +66,7 @@ This is pretty cool considering how difficult and almost impossible it is to byp
 -   Later on I’ve found out that this specific property of SourceMappingURL feature was already discovered before me (for example [here](https://twitter.com/xsspayloads/status/792683058931625984?lang=en)) - don’t worry though, this gets more interesting!
 
 
-### [The request made by SourceMappingURL can be made using `http:` even if the page is loaded via `https:`](https://example.com/csp)
+### [The request made by SourceMappingURL can be made using `http:` even if the page is loaded via `https:`](https://us-central1-smap-251411.cloudfunctions.net/csp)
 
 Another cool property of SourceMappingURL feature is the fact that it can send non-secure requests via `http:` even if the main page was loaded via a secure connection over `https:`, a narrative that cannot be accomplished otherwise in the browser, since SSL downgrade is forbidden and is considered to be a serious security flaw.
 
@@ -74,7 +74,7 @@ So by this point I found some really cool hacks that by combining them all toget
 
 So far so good. And then I was wondering to myself, if SourceMappingURL fires a request, does it have any of the other standard properties that any common request has? We already know that the response cannot be processed by the client side Javascript - so how is it similar to other types of network APIs in the browser? And then I’ve found the property that changed the game completely:
 
-### [The browser respects headers set on the response to the SourceMappingURL request (including `Set-Cookie`)](https://px-blog-source-map-anti-debug.appspot.com/public/smap/cases/headers/headers.html)
+### [The browser respects headers set on the response to the SourceMappingURL request (including `Set-Cookie`)](https://us-central1-smap-251411.cloudfunctions.net/headers)
 
 And that is the most powerful property of this feature - even though we don’t get to process the response ourselves, the browser respects response headers for this request, including `Set-Cookie`! This means an attacker can have a full request-and-response mechanism, simply by having their server inject the response in the cookie header instead of the actual response!
 
@@ -117,7 +117,7 @@ Since SourceMappingURL feature
 
 It can actually be used as a very strong Javascript Anti Debugging technique!
 
-### [How?](https://px-blog-source-map-anti-debug.appspot.com/scenario) (in a couple of words…)
+### [How?](https://us-central1-smap-251411.cloudfunctions.net/scenario) (in a couple of words…)
 
 By using SourceMappingURL feature’s power, an attacker can make sure their code will inform their servers the second the browser has its devtools opened.
 
@@ -133,7 +133,7 @@ And on top of everything, it will be extremely hard for any researcher to find t
 
 ### “I don’t quite understand… I need some live examples”
 
-That’s fair! This concept is not super easy to grasp just by reading, it is definitely worth seeing it works on live. Lucky for you, I’ve created a [thorough technical demo](https://px-blog-source-map-anti-debug.appspot.com/scenario) that attempts to fully explain and demonstrate everything mentioned here (I hope this demo is still up and running as it is located on PerimeterX's servers and I don't have control over it).
+That’s fair! This concept is not super easy to grasp just by reading, it is definitely worth seeing it works on live. Lucky for you, I’ve created a [thorough technical demo](https://us-central1-smap-251411.cloudfunctions.net/scenario) that attempts to fully explain and demonstrate everything mentioned here (I hope this demo is still up and running as it is located on PerimeterX's servers and I don't have control over it).
 
 You are encouraged to check it out and let me know what you think of it!
 

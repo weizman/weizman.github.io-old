@@ -2,6 +2,12 @@
 
 [Email](mailto:weizmangal@gmail.com) | [Github](https://github.com/weizman) | [Facebook](https://www.facebook.com/WeizmanGal) | [Twitter](https://twitter.com/WeizmanGal) | [Medium](https://medium.com/@weizmangal) | [Linkedin](https://www.linkedin.com/in/weizmangal/)
 
+# Published Work
+
+* [WhatsApp Vulnerability Disclosure - Read Permissions From The File System With Persistent XSS](https://weizman.github.io/?WhatsApp-Vulnerability-Disclosure-Read-Permissions-From-The-File-System-(CVE-2019-18426)) - [(CVE-2019-18426)](https://github.com/weizman/CVE-2019-18426)
+* [Chromiume Based Browsers Full CSP Bypass Zero Day](https://weizman.github.io/?csp-bypass-vul) - [(CVE-2020-6519)](https://github.com/weizman/CVE-2020-6519)
+* [Javascript Anti Debugging - Some Next Level Stuff](https://weizman.github.io/?javascript-anti-debugging-some-next-level-shit-part-1) - [Live Talk](https://www.youtube.com/watch?v=KYhgCjfdr-M)
+
 # Accomplishments
 
 > *In case the `Click for more...` buttons don't work, have a look at the [web page version](https://weizman.github.io/?resume) instead of the PDF!*

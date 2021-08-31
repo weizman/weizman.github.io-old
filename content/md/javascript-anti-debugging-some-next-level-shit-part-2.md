@@ -132,9 +132,9 @@ function malicious() {
 
 You get the idea - **run anything you want in any scope you choose without the need to wait for the debugger to free the code from being paused!**
 
-### The [debug-tracker]() (Take it to the next level)
+### The [debug-tracker](https://github.com/weizman/debug-tracker) (Take it to the next level)
 
-Based on what we just learned, I decided to create the [debug-tracker]() - a NodeJS library that gets a string representation of javascript code, and returns it when each function is now tracked so when someone steps into that function via the devtools debugger, a provided callback will be called.
+Based on what we just learned, I decided to create the [debug-tracker](https://github.com/weizman/debug-tracker) - a NodeJS library that gets a string representation of javascript code, and returns it when each function is now tracked so when someone steps into that function via the devtools debugger, a provided callback will be called.
 **Think of it as like firing an event indicating a function is being debugged with the function's name.**
 
 So basically passing the following code:
@@ -237,7 +237,7 @@ alert(3 === x(3));
 
 ![](./content/img/2-1.gif)
 
-### The [debug-tracker-demo-site]()
+### The [debug-tracker-demo-site](https://debug-tracker.ue.r.appspot.com/)
 
 I also created a user friendly website where you can load any (small) external javascript resources and get them wrapped by the debug-tracker and loaded in the website, so you can debug it as you wish and will be presented with the flow of debugging you made (whether you stepped in or out of a function) at the end of the session.
 It knows how to handle async situations as well, and can handle recursion too (as long as the arguments that are passed to the same function are different from before).
@@ -280,4 +280,4 @@ I will repeat what I wrote in the [first part](https://weizman.github.io/?javasc
 
 ### Hope you guys enjoyed this - Spread The Word!
 
-This research was conducted and published by [Gal Weizman]().
+This research was conducted and published by [Gal Weizman](https://weizman.github.io/?about).

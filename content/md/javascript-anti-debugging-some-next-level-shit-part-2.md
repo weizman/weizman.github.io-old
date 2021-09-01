@@ -1,6 +1,6 @@
 ### 01/09/2021
 
-> **tl;dr - Abusing the [Chromium Devtools Scope Pane](https://developers.google.com/web/tools/chrome-devtools/javascript#check-values) can allow execution of Javascript by the devtools while the main thread is paused by the debugger! I used this trick to create a very powerful [anti debugging technique library](https://github.com/weizman/debug-tracker) that tracks the flow of debugging done by the user and changes the flow of execution accordingly - check out the [DEMO](https://github.com/weizman/debug-tracker-website)**
+> **tl;dr - Abusing the [Chromium Devtools Scope Pane](https://developers.google.com/web/tools/chrome-devtools/javascript#check-values) can allow execution of Javascript by the devtools while the main thread is paused by the debugger! I used this trick to create a very powerful [anti debugging technique library](https://www.npmjs.com/package/debug-tracker-poc) that tracks the flow of debugging done by the user and changes the flow of execution accordingly - check out the [DEMO](https://github.com/weizman/debug-tracker-website)**
 
 As part of a long term anti debugging techniques research I do (highly recommending you to read the [first part](https://weizman.github.io/?javascript-anti-debugging-some-next-level-shit-part-1) of my work if you never did in order to understand the nature of my work), I came across a [list of techniques](https://x-c3ll.github.io/posts/javascript-antidebugging/), and it was [section 4](https://x-c3ll.github.io/posts/javascript-antidebugging/#0x04-devtools-detection-i-chrome-getter) which led me to do the research I will present in this article:
 
@@ -132,9 +132,9 @@ function malicious() {
 
 You get the idea - **run anything you want in any scope you choose without the need to wait for the debugger to free the code from being paused!**
 
-### The [debug-tracker](https://github.com/weizman/debug-tracker) (Take it to the next level)
+### The [debug-tracker](https://www.npmjs.com/package/debug-tracker-poc) (Take it to the next level)
 
-Based on what we just learned, I decided to create the [debug-tracker](https://github.com/weizman/debug-tracker) - a NodeJS library that gets a string representation of javascript code, and returns it when each function is now tracked so when someone steps into that function via the devtools debugger, a provided callback will be called.
+Based on what we just learned, I decided to create the [debug-tracker](https://www.npmjs.com/package/debug-tracker-poc) - a NodeJS library that gets a string representation of javascript code, and returns it when each function is now tracked so when someone steps into that function via the devtools debugger, a provided callback will be called.
 **Think of it as like firing an event indicating a function is being debugged with the function's name.**
 
 So basically passing the following code:

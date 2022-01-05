@@ -1,5 +1,6 @@
 
 body {
+  background-color: #d3fbfb;
   font-family: "Courier", sans-serif;
   /*font-weight: bold;*/
 }
@@ -16,7 +17,7 @@ img{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: navy;
+  background-color: lightskyblue;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -24,17 +25,18 @@ img{
 .sidenav a {
   padding: 2px 2px 2px 2px;
   text-decoration: none;
-  font-size: 16px;
-  color: #818181;
+  font-size: 14px;
+  color: #645959;
   display: block;
 }
 
 .sidenav a:hover:not(.dummy) {
+  font-weight: bold;
   cursor: pointer;
   /* margin:auto; */
   display: block;
-  color: #f1f1f1;
-  font-size: 18px;
+  color: black;
+  font-size: 14px;
 }
 
 .main {

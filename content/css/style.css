@@ -5,6 +5,10 @@ body {
   /*font-weight: bold;*/
 }
 
+code.hljs {
+  background-color: #d4edfd;
+}
+
 img{
     max-width:600px;
 }

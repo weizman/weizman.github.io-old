@@ -16,9 +16,9 @@
 
 ## Personal Experience
 
-* [Disclosure](file:///?WhatsApp-Vulnerability-Disclosure-Read-Permissions-From-The-File-System-(CVE-2019-18426)) of a critical chain of vulnerabilities in WhatsApp to Facebook
-* [Disclosure](file:///?csp-bypass-vul) of a medium vulnerability in Chromium to Google
-* Research and [publishing](file:///?javascript-anti-debugging-some-next-level-shit-part-1) of highly advanced browser anti debugging techniques
+* [Disclosure](https://weizman.github.io/?WhatsApp-Vulnerability-Disclosure-Read-Permissions-From-The-File-System-(CVE-2019-18426)) of a critical chain of vulnerabilities in WhatsApp to Facebook
+* [Disclosure](https://weizman.github.io/?csp-bypass-vul) of a medium vulnerability in Chromium to Google
+* Research and [publishing](https://weizman.github.io/?javascript-anti-debugging-some-next-level-shit-part-1) of highly advanced browser anti debugging techniques
 * Live talks including [OWASP Global AppSec conf](https://www.youtube.com/watch?v=YAHze5bKmek)
 
 ## Work Experience

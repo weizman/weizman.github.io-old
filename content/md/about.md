@@ -1,6 +1,6 @@
 # [Weizman.eth](https://weizman.github.io/)
 
-> *Browser javascript internals expert, specializing in web and client side security.*
+> *Browser javascript internals expert, specializing in web and client side security*
 
 > *Visit my [Personal blog](https://weizman.github.io/) for published work*
 

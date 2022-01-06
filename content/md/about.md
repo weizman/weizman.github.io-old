@@ -1,18 +1,36 @@
-### 15/12/2018
+# Weizman.eth
 
-# Enjoying Javascript and Web Security :)
+> *Browser javascript internals expert, with strong web security orientation*
 
-Check out my [resume](https://weizman.github.io/?resume) and my different projects and articles, and feel free to hit me up at any time for any reason!
+I have vast experience in javascript internals, specializing in browser javascript and client side security.
 
-# This is how I stay up to speed
+## Knowledge
 
-These are my favorite resources from which I make sure to constantly learn and keep up with:
+* Web applications security
+* Vulnerabilities research and web reverse engineering
+* Bots and scraping security
+* Supply chain attacks security
+* Browser extensions security
+* Core javascript
+* Architectures of client side products  
 
-[V8JS](https://v8.dev/blog) |
-[Chromium Bugs](https://bugs.chromium.org/p/chromium/issues/list) |
-[Chromium Blog](https://blog.chromium.org/) |
-[Chrome Tools](https://developers.google.com/web/tools/) |
-[Javascript Weekly](https://javascriptweekly.com/) |
-[DC9723](https://www.facebook.com/groups/dc9723/) |
-[Javascript Israel](https://www.facebook.com/groups/jsisrael/) |
-[Superhero JS](http://superherojs.com/)
+## Experience
+
+### Personal Experience
+
+* 
+
+### Work Experience
+
+* Elite Unit 8200 (3 years)
+    * Job required code browser javascript understanding, reverse engineering and deobfuscating of javascript code, all 
+        under offensive security efforts 
+* Uponit (1 year)
+    * Contributed to the development of a client side security library that bypassed ad blocker extensions under website contexts
+* PerimeterX (2 years)
+    * Core developer of PerimeterX CodeDefender, a client side supply chain attacks solution
+        * registered patent under this project
+    * Core developer of PerimeterX BotDefender, a bot detection and prevention solution
+    * Developed an in-house obfuscator for our client side products
+* Bionic (1 year)
+    * Fullstack Engineer working with ReactJS and Golang

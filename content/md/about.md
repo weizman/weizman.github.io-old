@@ -1,6 +1,7 @@
 # [Weizman.eth](https://weizman.github.io/)
 
-> *Browser javascript internals expert, specializing in web and client side security*
+> *Browser javascript internals expert, specializing in web and client side security.*
+> *Visit my [Personal blog](https://weizman.github.io/) for published work*
 
 ## Expertise
 
@@ -11,29 +12,29 @@
 * Bots and scraping security
 * Supply chain attacks security
 * Browser extensions security
-* Architectures of client side products
+* Architectures and designs of client side products
 * Ad tech
 
 ## Personal Experience
 
-* [Disclosure](https://weizman.github.io/?WhatsApp-Vulnerability-Disclosure-Read-Permissions-From-The-File-System-(CVE-2019-18426)) of a critical chain of vulnerabilities in WhatsApp to Facebook
-* [Disclosure](https://weizman.github.io/?csp-bypass-vul) of a medium vulnerability in Chromium to Google
+* [Disclosure](https://weizman.github.io/?WhatsApp-Vulnerability-Disclosure-Read-Permissions-From-The-File-System-(CVE-2019-18426)) of a critical chain of vulnerabilities in WhatsApp to Facebook (CVE-2019-18426)
+* [Disclosure](https://weizman.github.io/?csp-bypass-vul) of a medium vulnerability in Chromium to Google (CVE-2020-6519)
 * Research and [publishing](https://weizman.github.io/?javascript-anti-debugging-some-next-level-shit-part-1) of highly advanced browser anti debugging techniques
 * Live talks including [OWASP Global AppSec conf](https://www.youtube.com/watch?v=YAHze5bKmek)
 
 ## Work Experience
 
-* Elite Unit 8200 (3 years)
+* 8200 Elite Unit [2012 - 2016]
     * Job required core browser javascript understanding, reverse engineering and deobfuscating of javascript code, all 
         under offensive security efforts 
-* Uponit (1 year)
+* Uponit [2016 - 2017]
     * Contributed to the development of a client side security library that bypassed ad blocker extensions under website contexts
-* PerimeterX (2 years)
+* PerimeterX [2018 - 2020]
     * Core developer of PerimeterX CodeDefender, a client side supply chain attacks solution
         * [registered](https://patents.justia.com/inventor/gal-weizman) patent under this project
     * Core developer of PerimeterX BotDefender, a bot detection and prevention solution
     * Developed an in-house obfuscator for our client side products
-* Bionic (1 year)
+* Bionic [2020 - 2021]
     * Fullstack Engineer working with ReactJS and Golang
 
 ## General Knowledge
@@ -43,10 +44,9 @@
 * mocha, jest, webdriverio, puppeteer, selenium
 * docker, mongoDB, postgres, jenkins, circleCI
 
-## Final Points
+## About Me
 
-* Native English speaker
 * Hard worker, highly skilled and a self learner
 * Passionate and highly experienced in my field of expertise
 * Am always open for collaborations, consulting or any kind of opportunities
-* Am most reachable on [twitter](https://twitter.com/WeizmanGal)
+* Am mostly reachable on [twitter](https://twitter.com/WeizmanGal)

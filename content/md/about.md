@@ -6,24 +6,27 @@ I have vast experience in javascript internals, specializing in browser javascri
 
 ## Knowledge
 
+* Core javascript
 * Web applications security
 * Vulnerabilities research and web reverse engineering
+* Browser anti debugging advanced techniques
 * Bots and scraping security
 * Supply chain attacks security
 * Browser extensions security
-* Core javascript
-* Architectures of client side products  
+* Architectures of client side products
+* Ad tech
 
-## Experience
+## Personal Experience
 
-### Personal Experience
+* Disclosure of a critical chain of vulnerabilities in WhatsApp to Facebook
+* Disclosure of a medium vulnerability in Chromium to Google
+* Research and publishing of highly advanced browser anti debugging techniques
+* Live talks including OWASP Global AppSec conf
 
-* 
-
-### Work Experience
+## Work Experience
 
 * Elite Unit 8200 (3 years)
-    * Job required code browser javascript understanding, reverse engineering and deobfuscating of javascript code, all 
+    * Job required core browser javascript understanding, reverse engineering and deobfuscating of javascript code, all 
         under offensive security efforts 
 * Uponit (1 year)
     * Contributed to the development of a client side security library that bypassed ad blocker extensions under website contexts

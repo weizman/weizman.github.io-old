@@ -2,7 +2,7 @@
 
 > *Browser javascript internals expert, specializing in web and client side security*
 
-## Knowledge
+## Expertise
 
 * Core javascript
 * Web applications security
@@ -35,3 +35,18 @@
     * Developed an in-house obfuscator for our client side products
 * Bionic (1 year)
     * Fullstack Engineer working with ReactJS and Golang
+
+## General Knowledge
+
+* javascript, nodeJS, python, ReactJS, Golang
+* bash, git, npm, yarn, webpack, rollup
+* mocha, jest, webdriverio, puppeteer, selenium
+* docker, mongoDB, postgres, jenkins, circleCI
+
+## Final Points
+
+* Native English speaker
+* Hard worker, highly skilled and a self learner
+* Passionate and highly experienced in my field of expertise
+* Am always open for collaborations, consulting or any kind of opportunities
+* Am most reachable on [twitter](https://twitter.com/WeizmanGal)

@@ -1,8 +1,6 @@
 # Weizman.eth
 
-> *Browser javascript internals expert, with strong web security orientation*
-
-I have vast experience in javascript internals, specializing in browser javascript and client side security.
+> *Browser javascript internals expert, specializing in web and client side security*
 
 ## Knowledge
 

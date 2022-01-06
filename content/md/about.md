@@ -1,4 +1,4 @@
-# Weizman.eth
+# [Weizman.eth](https://twitter.com/WeizmanGal)
 
 > *Browser javascript internals expert, specializing in web and client side security*
 

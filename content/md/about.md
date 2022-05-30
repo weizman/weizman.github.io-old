@@ -2,9 +2,7 @@
 
 > *Browser javascript internals expert, specializing in web and client side security*
 
-> *Visit my [Personal blog](https://weizman.github.io/) for published work*
-
-> [twitter](https://twitter.com/WeizmanGal) | [github](https://github.com/weizman/) | [weizmangal@gmail.com](mailto:weizmangal@gmail.com)
+> [twitter](https://twitter.com/WeizmanGal) | [github](https://github.com/weizman/) | [weizmangal@gmail.com](mailto:weizmangal@gmail.com) | *Visit my [Personal blog](https://weizman.github.io/) for published work*
 
 #### Expertise
 

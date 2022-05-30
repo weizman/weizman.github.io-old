@@ -32,7 +32,7 @@
     * Contributed to the development of a client side security library that bypassed ad blocker extensions under website contexts
 * PerimeterX [2018 - 2020]
     * Core developer of PerimeterX CodeDefender, a client side supply chain attacks solution
-        * [registered](https://patents.justia.com/inventor/gal-weizman) patent under this project
+        * [registered](https://patents.justia.com/patent/20210064685) patent under this project
     * Core developer of PerimeterX BotDefender, a bot detection and prevention solution
     * Developed an in-house obfuscator for our client side products
 * Bionic [2020 - 2022]

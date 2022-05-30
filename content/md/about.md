@@ -1,4 +1,4 @@
-# [Weizman.eth](https://weizman.github.io/)
+# [Gal Weizman](https://weizman.github.io/)
 
 > *Browser javascript internals expert, specializing in web and client side security*
 

@@ -4,6 +4,8 @@
 
 > *Visit my [Personal blog](https://weizman.github.io/) for published work*
 
+> [twitter](https://twitter.com/WeizmanGal) | [github](https://github.com/weizman/) | [weizmangal@gmail.com](mailto:weizmangal@gmail.com)
+
 #### Expertise
 
 * Core javascript

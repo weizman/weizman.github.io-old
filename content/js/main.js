@@ -60,7 +60,7 @@ function loadMarkDown(file, cb) {
     var html = converter.makeHtml(text);
     cb(html);
   }, function() {
-    present('about');
+    present('resume');
   });
 }
 
